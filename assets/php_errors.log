@@ -1,0 +1,4 @@
+[01-Jun-2017 18:19:49 UTC] PHP Warning:  realpath() expects exactly 1 parameter, 0 given in /home/ubuntu/workspace/assets/css/check.php on line 2
+[01-Jun-2017 18:19:49 UTC] PHP Stack trace:
+[01-Jun-2017 18:19:49 UTC] PHP   1. {main}() /home/ubuntu/workspace/assets/css/check.php:0
+[01-Jun-2017 18:19:49 UTC] PHP   2. realpath() /home/ubuntu/workspace/assets/css/check.php:2

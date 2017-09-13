@@ -1,0 +1,1 @@
+<li data-target="#vehicle-image-carousel" data-slide-to="<?php echo $indicator_number ?>" class="<?php echo $active?>"></li>
