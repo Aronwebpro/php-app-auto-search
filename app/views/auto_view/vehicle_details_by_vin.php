@@ -6,12 +6,11 @@
 		<!--Header Top line-->
 		<div class="row">
 			<div class="searh-header">
-				<!--<a href="">	<span><img src="/assets/images/svg/menu_bar.svg"></img></span></a>-->
-				<a href="/auto"><span><img src="/assets/images/svg/home_button.svg"></img></span></a>
-				<a href="/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
-				<a href="<?php echo '/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo $maker; ?></span></a>
-				<a href="<?php echo '/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
-				<a href="<?php echo '/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo $model; ?></span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto"><span><img src="/assets/images/svg/home_button.svg"></img></span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo $maker; ?></span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo $model; ?></span></a>
 				<span class="header-vehicle-link remove-after"><?php echo $trim; ?></span>
 			</div>
 		</div><!--End Row -->
@@ -34,18 +33,18 @@
 				<!--Rating wrapper-->
 				<div class="ratings-widget">
 				<h3>Average Rating:</h3>
-				<span class="rating-star"><img src="/assets/images/svg/rating_stars/star<?php echo $rating_number; ?>.svg"></img></span>
+				<span class="rating-star"><img src="<?php echo ROOT_URL; ?>/assets/images/svg/rating_stars/star<?php echo $rating_number; ?>.svg"></img></span>
 				</div>
 				<!--CTA Buttons-->
 				<div class="cta-buttons">
 					<div class="row fl_r">
 						<div class="carfax-wrapper">
-							<a href="https://www.carfax.com/VehicleHistory/p/Report.cfx?partner=WDB_0&vin=<?php echo $vin; ?>" target="_blank"><p>Get Carfax Report:<img src="/assets/images/carfax-logo.png"></img></p></a>
+							<a href="https://www.carfax.com/VehicleHistory/p/Report.cfx?partner=WDB_0&vin=<?php echo $vin; ?>" target="_blank"><p>Get Carfax Report:<img src="<?php echo ROOT_URL; ?>/assets/images/carfax-logo.png"></img></p></a>
 						</div>
 					</div>
 					<div class="row order-parts-button-wrap">
 						<div class="find-parts-wrapper">
-							<img src="/assets/images/order_parts.png"></img>
+							<img src="<?php echo ROOT_URL; ?>/assets/images/order_parts.png"></img>
 							<button id="find-parts-button" class="button vehicle-cta-button" href="" type="button">Find Parts</button>
 						</div>
 					</div>
@@ -92,47 +91,47 @@
 			        <div class="col-xs-12">
 			            <table>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/car_type.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/car_type.png"></img></td>
 			                    <td>Type:</td>
 			                    <td><?php echo $type; ?></td>
 			                </tr>
 			                <tr>
-			                <td><img class="vehicle-spec-icon" src="/assets/images/icons/engine2.png"></img></td>
+			                <td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/engine2.png"></img></td>
 			                    <td>Engine:</td>
 			                <td><?php echo $engine; ?></td>
 			                </tr>
 			                <tr>
-			                <td><img class="vehicle-spec-icon" src="/assets/images/icons/trim.png"></img></td>
+			                <td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/trim.png"></img></td>
 			                    <td>Trim:</td>
 			                <td><?php echo $trim; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/doores.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/doores.png"></img></td>
 			                    <td>Doors:</td>
 			                    <td><?php echo $doors; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/transmission.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/transmission.png"></img></td>
 			                    <td>Transmission:</td>
 			                    <td><?php echo $transmission; ?></td>
 			                </tr>			                
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/driven_wheels.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/driven_wheels.png"></img></td>
 			                    <td>Driven Wheels:</td>
 			                    <td><?php echo ucwords($driven_wheels); ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/gas_mileage.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/gas_mileage.png"></img></td>
 			                    <td>Gas Mileage:</td>
 			                    <td><?php echo $gas_mileage; ?></td>
 			                </tr>
 			                 <tr>
-			                	<td><img class="vehicle-spec-icon"  src="/assets/images/icons/interior_color2.png"></img></td>
+			                	<td><img class="vehicle-spec-icon"  src="<?php echo ROOT_URL; ?>/assets/images/icons/interior_color2.png"></img></td>
 			                    <td>Exterior Color:</td>
 			                    <td><?php echo $exterior_color; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon"  src="/assets/images/icons/exterior_color2.png"></img></td>
+			                	<td><img class="vehicle-spec-icon"  src="<?php echo ROOT_URL; ?>/assets/images/icons/exterior_color2.png"></img></td>
 			                    <td>Interior Color:</td>
 			                    <td><?php echo $interior_color; ?></td>
 			                </tr>

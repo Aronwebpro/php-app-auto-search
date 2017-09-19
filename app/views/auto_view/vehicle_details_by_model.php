@@ -8,11 +8,11 @@
 		<div class="row">
 			<div class="searh-header">
 				<!--<a href="">	<span><img src="/assets/images/svg/menu_bar.svg"></img></span></a>-->
-				<a href="/auto"><span><img src="/assets/images/svg/home_button.svg"></img></span></a>
-				<a href="/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
-				<a href="<?php echo '/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo $maker; ?></span></a>
-				<a href="<?php echo '/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
-				<a href="<?php echo '/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo $model; ?></span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto"><span><img src="<?php echo ROOT_URL; ?>/assets/images/svg/home_button.svg"></img></span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo $maker; ?></span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
+				<a href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo $model; ?></span></a>
 				<span class="header-vehicle-link remove-after"><?php echo $trim; ?></span>
 			</div>
 		</div><!--End Row -->
@@ -34,7 +34,7 @@
 			<div class="col-xs-12 col-sm-5 ">
 				<div class="cta-buttons fl_r">
 					<div class="find-parts-wrapper">
-							<img src="/assets/images/order_parts.png">
+							<img src="<?php echo ROOT_URL; ?>/assets/images/order_parts.png">
 							<button id="find-parts-button" class="button vehicle-cta-button" href="" type="button">Find Parts</button>
 						</div>
 				</div>
@@ -78,37 +78,37 @@
 			        <div class="col-xs-12">
 			            <table>
 			            	<tr>
-			                	<td> <!--<img class="vehicle-spec-icon" src="/assets/images/icons/car_type.png"></img>--> </td>
+			                	<td></td>
 			                    <td>Make:</td>
 			                    <td><?php echo $maker; ?></td>
 			                </tr>
 			            	<tr>
-			                	<td><!--<img class="vehicle-spec-icon" src="/assets/images/icons/car_type.png"></img>--></td>
+			                	<td></td>
 			                    <td>Model:</td>
 			                    <td><?php echo $model; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/car_type.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/car_type.png"></img></td>
 			                    <td>Type:</td>
 			                    <td><?php echo $type; ?></td>
 			                </tr>
 			                <tr>
-			                <td><img class="vehicle-spec-icon" src="/assets/images/icons/engine2.png"></img></td>
+			                <td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/engine2.png"></img></td>
 			                    <td>Engine:</td>
 			                <td><?php echo $engine; ?></td>
 			                </tr>
 			                <tr>
-			                <td><img class="vehicle-spec-icon" src="/assets/images/icons/trim.png"></img></td>
+			                <td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/trim.png"></img></td>
 			                    <td>Trim:</td>
 			                <td><?php echo $trim; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/doores.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/doores.png"></img></td>
 			                    <td>Doors:</td>
 			                    <td><?php echo $doors; ?></td>
 			                </tr>
 			                <tr>
-			                	<td><img class="vehicle-spec-icon" src="/assets/images/icons/transmission.png"></img></td>
+			                	<td><img class="vehicle-spec-icon" src="<?php echo ROOT_URL; ?>/assets/images/icons/transmission.png"></img></td>
 			                    <td>Transmission:</td>
 			                    <td><?php echo $transmission; ?></td>
 			                </tr>			                
@@ -159,7 +159,7 @@
 		<div class="row">
 			<div class="ratings-widget col-xs-12">
 				<h3>Average Rating:</h3>
-				<span class="rating-star"><?php if( $rating_number !== 0) { ?> <img src="/assets/images/svg/rating_stars/star<?php  echo $rating_number; ?>.svg"></img><?php } else { ?> No Rating <?php } ?> </span>
+				<span class="rating-star"><?php if( $rating_number !== 0) { ?> <img src="<?php echo ROOT_URL; ?>/assets/images/svg/rating_stars/star<?php  echo $rating_number; ?>.svg"></img><?php } else { ?> No Rating <?php } ?> </span>
 			</div>
 		</div>
     <div class="vehicle-info-container">

@@ -55,8 +55,8 @@ h1 {
   </div>
   <div class="row">
     <div class="col-md-12">
-      <p class="lead">Please check the address you have entered.</p>
-      <a href="/" class="home-search-button">Return to Home Page</a>
+      <p class="lead">Please check the url you have entered.</p>
+      <a href="<?php echo ROOT_URL; ?>" class="home-search-button">Return to Home Page</a>
     </div>
   </div>
 </div>

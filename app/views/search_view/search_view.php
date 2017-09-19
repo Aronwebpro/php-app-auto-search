@@ -6,12 +6,11 @@
 	<!--Header Top menu-->
 	<div class="row">
 		<div class="searh-header">
-			<!--<a href="">	<span><img src="/assets/images/svg/menu_bar.svg"></img></span></a>-->
-			<a href="/auto"><span><img src="/assets/images/svg/home_button.svg"></img></span></a>
+			<a href="/auto"><span><img src="<?php echo ROOT_URL; ?>/assets/images/svg/home_button.svg"></img></span></a>
 			<a href="/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
-			<a style="<?php if (!isset($maker)) { echo "display:none;";}?>" href="<?php echo '/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo ucwords(str_replace('-', ' ', $maker)); ?></span></a>
-			<a style="<?php if (!isset($year)) { echo "display:none;";}?>" href="<?php echo '/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
-			<a style="<?php if (!isset($model)) { echo "display:none;";}?>"href="<?php echo '/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo strtoupper($model); ?></span></a>
+			<a style="<?php if (!isset($maker)) { echo "display:none;";}?>" href="<?php echo ROOT_URL.'/auto/search/'.$maker ?>" class="header-vehicle-link"><span><?php echo ucwords(str_replace('-', ' ', $maker)); ?></span></a>
+			<a style="<?php if (!isset($year)) { echo "display:none;";}?>" href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year ?>" class="header-vehicle-link"><span><?php echo $year; ?></span></a>
+			<a style="<?php if (!isset($model)) { echo "display:none;";}?>"href="<?php echo ROOT_URL.'/auto/search/'.$maker.'.'.$year.'.'.$model ?>" class="header-vehicle-link"><span ><?php echo strtoupper($model); ?></span></a>
 			<span class="header-vehicle-link remove-after"><?php echo $trim; ?></span>
 		</div>
 	</div><!--End Row -->

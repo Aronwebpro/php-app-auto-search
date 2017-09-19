@@ -4,7 +4,7 @@
 	<div class="row searh-header"></div>
 	<div class="model-info-title row">
 		<div class="col-xs-2">
-			<img style="width:100%;"src="assets/images/acura_2010_rdx.png"></img>
+			<img style="width:100%;"src="<?php echo ROOT_URL; ?>assets/images/acura_2010_rdx.png"></img>
 		</div>
 		<div class="col-xs-10">
 			<h2>Model:</h2>
@@ -22,7 +22,7 @@
 						<h3>Model Image</h3>
 					</div>
 					<div class=" search-block-body col-xs-12">
-						<img src="assets/images/2010-acura-rdx-1280-03.jpg"></img>
+						<img src="<?php echo ROOT_URL; ?>assets/images/2010-acura-rdx-1280-03.jpg"></img>
 					</div>
 				</div>
 			</div>	

@@ -1,7 +1,7 @@
 <div class="col-xs-12 edm-review">
 	<div class="row"> 
 		<h3 class="inline-block">-<?php echo $review_title; ?></h3>
-		<p><span><?php  echo $user_rating; ?> </span> <img src="/assets/images/svg/review_stars/review_stars<?php echo $user_rating; ?>.svg" alt="User Rating"></p>
+		<p><span><?php  echo $user_rating; ?> </span> <img src="<?php echo ROOT_URL; ?>/assets/images/svg/review_stars/review_stars<?php echo $user_rating; ?>.svg" alt="User Rating"></p>
 		<p class="inline-block"></p>
 	</div>
 	<div class="row review-widget-author">

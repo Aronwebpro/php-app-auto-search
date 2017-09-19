@@ -46,7 +46,7 @@ class Router {
 			
 		} else {
 			//bad controller error
-			return new Error('index', $this->urlvalues );
+			return new ErrorPage('index', $this->urlvalues );
 		
 		}
 	}
@@ -57,9 +57,9 @@ $uri = str_replace("%3F", "?", urlencode($_SERVER['REQUEST_URI']));
 $url = explode ("%2F",$uri);
 $action = strtok($url[2], '?');
 
-$_GET['parameter1'] = strtok($url[3], '?');
-$_GET['parameter2'] = strtok($url[4], '?');
-$_GET['parameter3'] = strtok($url[5], '?');
+$url[3] ? $_GET['parameter1'] = strtok($url[3], '?') : 0;
+$url[4] ? $_GET['parameter2'] = strtok($url[4], '?') : 0;
+$url[5] ? $_GET['parameter3'] = strtok($url[5], '?') : 0;
 
 
 $urls = array(

@@ -27,10 +27,14 @@ body {
 	overflow-x: hidden;
 	min-height: 800px;
 	font-size: 16px;
+	background-image:url(../images/html-background.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
 }
 
+
 .page {
-  background-color: #e9ebee;
+  /*background-color: #e9ebee;*/
 }
 
 .row {
@@ -755,7 +759,7 @@ img.carousel-image {
 
 /*******************Home Page Styles*****************************/
 #page_Home {
-  background-color:white;
+  /*background-color:white;*/
   /*background-image: url('/assets/images/hero-bg.jpg');*/
   
 }

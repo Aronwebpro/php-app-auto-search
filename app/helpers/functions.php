@@ -64,7 +64,7 @@ function datetime_to_text($datetime="") {
 
 //Load CSS or JavaScrip asstes on site
 function getJavascript_local($js_file="") {
-	$js_html = '<script type="text/javascript" src="/assets/js/'.$js_file.'"></script>';
+	$js_html = '<script type="text/javascript" src="'.ROOT_URL.'/assets/js/'.$js_file.'"></script>';
 	echo $js_html;
 }
 function getJavascript_cdn($js_link="") {
@@ -83,7 +83,7 @@ function hosts_url($ssl=false) {
 }
 function getCss_local($css_file="") {
 	global $host;
-	$css_html = '<link rel="stylesheet" type="text/css" href="/assets/css/'.$css_file.'">';
+	$css_html = '<link rel="stylesheet" type="text/css" href="'.ROOT_URL.'/assets/css/'.$css_file.'">';
 	echo $css_html;
 }
 function getCss_cdn($css_file="") {

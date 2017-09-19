@@ -2,7 +2,7 @@
 
 require_once('controller.php');
 
-class Error extends Controller {
+class ErrorPage extends Controller {
 	
 	protected function Index() {
 		$viewmodel = "error.php";

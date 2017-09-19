@@ -1,9 +1,8 @@
 <section id="get-model" class="section-wrapper">
 		<div class="row">
 			<div id ="menu-link-block" class="searh-header">
-				<!--<a href="">	<span><img src="/assets/images/svg/menu_bar.svg"></img></span></a>-->
-				<a href="/auto"><span><img src="/assets/images/svg/home_button.svg"></img></span></a>
-				<a href="/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto"><span><img src="<?php echo ROOT_URL; ?>/assets/images/svg/home_button.svg"></img></span></a>
+				<a href="<?php echo ROOT_URL; ?>/auto/search/" class="header-vehicle-link header-vehicle-link-first"><span>Makers</span></a>
 			</div>
 		</div><!--End Row --> 
 		<?php if($errors) { error_message($errors); } ?>
@@ -58,21 +57,21 @@
 						<select name="model" id="model_select" disabled>
 							<option value="select">Select Model</option>
 						</select>
-						<span id="model-searching"><img src="/assets/images/bx_loader.gif"></span>
+						<span id="model-searching"><img src="<?php echo ROOT_URL; ?>/assets/images/bx_loader.gif"></span>
 					</div>
 					<div class="select_list">
 						<span class="before-select">4</span>
 						<select name="model" id="engine_select" disabled>
 							<option value="select">Select Engine and Transmission</option>
 						</select>
-						<span id="engine-searching"><img src="/assets/images/bx_loader.gif"></span>
+						<span id="engine-searching"><img src="<?php echo ROOT_URL; ?>/assets/images/bx_loader.gif"></span>
 					</div>
 					<div class="select_list">
 						<span class="before-select">5</span>
 						<select name="trim" id="trim_select" disabled>
 							<option value="select">Select Trim</option>
 						</select>
-						<span id="trim-searching"><img src="/assets/images/bx_loader.gif"></span>
+						<span id="trim-searching"><img src="<?php echo ROOT_URL; ?>/assets/images/bx_loader.gif"></span>
 					</div>
 				</div>	
 				<div class="row">

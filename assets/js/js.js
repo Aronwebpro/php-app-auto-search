@@ -1,5 +1,8 @@
 $("document").ready(function() {
 
+//Global
+
+var rootUrl = '';
 
 /******************* Maker, Year, Model lists manipulations *****************/    
     //Global variables
@@ -11,10 +14,10 @@ $("document").ready(function() {
 		models_array = [];
     
     //Generate Makers select list
-    if(location.pathname == '/auto' || location.pathname == '/auto/') {
+    if(location.pathname == rootUrl+'/auto' || location.pathname == '/auto/') {
        	 $.ajax({
 				type: 'GET',
-				url:"/auto/makers",
+				url:rootUrl+"/auto/makers",
 				dataType: 'json',
 				success: function (data) {
 					obj = data;
@@ -62,7 +65,7 @@ $("#maker_select").on('change', function() {
 				resetEngine();
 				resetTrim();
 				lockList('#trim_select');
-				$("#menu-link-block").append('<a href="auto/search/'+SelectedMaker.toLowerCase().replace(/\s/g, "-")+'" id="menu-make" class="header-vehicle-link"><span>'+SelectedMaker+'</span></a>');
+				$("#menu-link-block").append('<a href="'+rootUrl+'auto/search/'+SelectedMaker.toLowerCase().replace(/\s/g, "-")+'" id="menu-make" class="header-vehicle-link"><span>'+SelectedMaker+'</span></a>');
 				
 			} else  {
 				lockList('#year_select');
@@ -98,7 +101,7 @@ $("#year_select").on('change', function() {
 				modelAnimation.show();
 				$.ajax({
 					type: 'GET',
-					url:"/auto/model",
+					url:rootUrl+"/auto/model",
 					dataType: 'json',
 					data: data,
 					success: function (data) {
@@ -136,7 +139,7 @@ $("#year_select").on('change', function() {
 	        				
 	    			}
 				});
-				$("#menu-link-block").append('<a href="auto/search/'+SelectedMaker.toLowerCase()+'.'+SelectedYear.toLowerCase()+'" id="menu-year" class="header-vehicle-link"><span>'+SelectedYear+'</span></a>');
+				$("#menu-link-block").append('<a href="'+rootUrl+'auto/search/'+SelectedMaker.toLowerCase()+'.'+SelectedYear.toLowerCase()+'" id="menu-year" class="header-vehicle-link"><span>'+SelectedYear+'</span></a>');
 			} else {
 				removeMenuItem("#menu-year");
 				removeMenuItem("#menu-model");
@@ -175,7 +178,7 @@ $("#model_select").on('change', function() {
 	
 				$.ajax({
 						type: 'GET',
-						url: '/auto/edm_styles',	
+						url: rootUrl+'/auto/edm_styles',	
 						dataType: 'json',
 						data: data,
 						success: function (data) {
@@ -265,7 +268,7 @@ $("#model_select").on('change', function() {
 				
 				//Generate Model link in Top Menu
 				var maker_url = maker.replace(/ /g,"_");
-				$("#menu-link-block").append('<a href="auto/search/'+maker_url+'.'+year+'.'+model+'" id="menu-model" class="header-vehicle-link"><span>'+model+'</span></a>');
+				$("#menu-link-block").append('<a href="'+rootUrl+'auto/search/'+maker_url+'.'+year+'.'+model+'" id="menu-model" class="header-vehicle-link"><span>'+model+'</span></a>');
 				
 		} else {
 				removeMenuItem("#menu-model");

@@ -1,5 +1,5 @@
 /******************* Helper functions*****************/
-
+var rootUrl = '';
 
 /******************* Text Expand *****************/
 function expandReview(button_id, block_id, height) {
@@ -90,7 +90,7 @@ function unlockList(list_id) {
 }
 //Loading animation
 function pageLoader(action) {
-	var loaderHTML = '<div id="loader" class="loder-background"><img id="loader-image" src="assets/images/gif/pageloader.gif"></img></div>';
+	var loaderHTML = '<div id="loader" class="loder-background"><img id="loader-image" src="'+rootUrl+'assets/images/gif/pageloader.gif"></img></div>';
 	if (action == 'load') {
 		$('body').append(loaderHTML);
 	} else {
@@ -163,7 +163,7 @@ function  getEdmEmodel(id, maker, year, model) {
 				}
 	$.ajax({
 			type: 'GET',
-			url: '/auto/emodel',
+			url: rootUrl+'/auto/emodel',
 			dataType: 'text',
 			data: data,
 			success: function (data) {
@@ -186,7 +186,7 @@ function  getEdmVin(vin) {
 				}
 	$.ajax({
 			type: 'GET',
-			url: '/auto/vin',
+			url: rootUrl+'/auto/vin',
 			dataType: 'text',
 			data: data,
 			success: function (data) {
@@ -240,7 +240,7 @@ function  getActionById(id, action) {
 				}
 	$.ajax({
 			type: 'GET',
-			url: '/auto/'+action,
+			url: rootUrl+'/auto/'+action,
 			dataType: 'text',
 			data: data,
 			success: function (data) {
