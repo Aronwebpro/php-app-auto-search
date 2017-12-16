@@ -14,9 +14,8 @@ Edmunds Api also providing nice vehicle images and reviews what it could be read
 
 This app provides ability to browse between cars and know them better.  
 
-Project demo: 
+## [Project Demo](http://linkyourparts.com/)
 Free version of Edmunds Api only provides 25queries per day, after it will reach limit the app will stop working. 
-
 
 ## License
 License: GPLv2 or later
