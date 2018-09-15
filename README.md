@@ -14,8 +14,7 @@ Edmunds Api also providing nice vehicle images and reviews what it could be read
 
 This app provides ability to browse between cars and know them better.  
 
-## [Project Demo](http://linkyourparts.com/) 
-## Note: Edmunds API has been deprecated and App doesn't work anymore because was based on this API. To watch live presentation please watch this [video](https://youtu.be/53WwQycQPrA) 
+## Edmunds API has been canceled and App doesn't work anymore because it was based on this API. To watch live presentation please watch this [video](https://youtu.be/53WwQycQPrA) 
 (https://youtu.be/53WwQycQPrA)
 
 
